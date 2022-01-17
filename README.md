@@ -12,8 +12,7 @@ It uses:
 - [Cypress](https://www.cypress.io/) for end-to-end testing.
 
 ## Card wall
-
-REPLACE THIS TEXT WITH A LINK TO YOUR CARD WALL
+[Super sick card wall](https://trello.com/b/N3bTW90E/week-3-project-team-1)
 
 ## Quickstart
 

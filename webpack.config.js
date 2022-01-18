@@ -4,6 +4,9 @@ module.exports = {
   devServer: {
   },
   devtool: 'source-map',
+  entry: {
+    "ym.min": "./bin/www",
+  },
   module: {
     rules: [
       {

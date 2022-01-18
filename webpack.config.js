@@ -5,7 +5,7 @@ module.exports = {
   },
   devtool: 'source-map',
   entry: {
-    "ym.min": "app.js",
+    "ym.min": "./app.js",
   },
   module: {
     rules: [

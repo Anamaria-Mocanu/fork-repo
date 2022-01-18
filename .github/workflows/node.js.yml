@@ -11,16 +11,14 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
-      matrix:
-        node-version: [12.x, 14.x, 16.x]
+        matrix:
+          node-version: [12.x, 14.x, 16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    
+
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
@@ -29,6 +27,8 @@ jobs:
         cache: 'npm'
     - name: MongoDB in GitHub Actions
       uses: supercharge/mongodb-github-action@1.7.0
+    - name: Checkout
+      uses: actions/checkout@v1
     - name: Cypress run
       uses: cypress-io/github-action@v1
       with:

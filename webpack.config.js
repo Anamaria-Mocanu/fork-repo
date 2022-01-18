@@ -4,9 +4,6 @@ module.exports = {
   devServer: {
   },
   devtool: 'source-map',
-  entry: {
-    "ym.min": "./src/bootstrap.ts",
-  },
   module: {
     rules: [
       {

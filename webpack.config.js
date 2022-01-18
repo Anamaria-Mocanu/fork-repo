@@ -29,8 +29,8 @@ module.exports = {
     ]
   }, // End of module
   output: {
-    filename: '[name].js',
-    path: './dist'
+    filename: 'app.js',
+    path: path.resolve(__dirname, './')
   },
   plugins: [],
   resolve: {

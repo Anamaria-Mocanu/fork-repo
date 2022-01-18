@@ -38,4 +38,3 @@ jobs:
         wait-on: http://localhost:3030
     - run: npm run lint
     - run: npm run test:unit
-    - run: npm run test:integration

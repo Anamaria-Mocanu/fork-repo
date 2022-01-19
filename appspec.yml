@@ -5,4 +5,5 @@ hooks:
   ApplicationStart:
     - location: scripts/reload-pm2.sh
       timeout: 300
-      runas: ec2-user
+      runas: acebook-t1w3
+

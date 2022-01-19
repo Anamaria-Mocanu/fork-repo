@@ -1,3 +1,3 @@
 #!/bin/bash
-cd ~/aws-codedeploy
-pm2 startOrReload ecosystem.config.js 
+cd /home/ec2-user/acebook-t1w3
+npm start

@@ -1,5 +1,4 @@
-@@ -2,5 +2,8 @@
-pwd
+#!/bin/bash
+echo "Changing directory to acebook-t1w3"
 cd /home/ec2-user/acebook-t1w3
-pwd
-echo "Helloooo, can you see me working?"
+pm2 start npm --name "acebook-t1w3" -- start

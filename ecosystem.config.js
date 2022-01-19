@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'aws-codedeploy',
-      script: 'npm start',
+      script: './bin/www',
       args: 'serve -s build -l 3000 -n',
       interpreter: 'none',
       env_production: {

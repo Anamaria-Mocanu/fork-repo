@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 echo "Changing directory to acebook-t1w3"
 cd /home/ec2-user/acebook-t1w3
 # nvm bash_completion

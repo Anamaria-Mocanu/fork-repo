@@ -26,9 +26,10 @@ nvm install 12.14.1
 # systemctl enable mongod
 
 # Installing app dependencies
-cd /home/ec2-user/acebook-t1w3
+# cd /home/ec2-user/acebook-t1w3
 npm install
 npm i pm2@latest -g
 
 # starts application
-pm2 reload npm --name "acebook-t1w3" -- start
+pm2 delete all
+pm2 start npm --name "acebook-t1w3" -- start

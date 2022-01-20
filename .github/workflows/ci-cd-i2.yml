@@ -48,8 +48,8 @@ jobs:
       strategy:
         matrix:
           node-version: ['12.x']
-          appname: ['codedeploy-t1w3-v2']
-          deploy-group: ['t1w3-v2']
+          appname: ['codeploy-t1w3-v3']
+          deploy-group: ['t1-w3-v3']
           s3-bucket: ['acebook-t1w3']
           s3-filename: ['t1-w3-codedeploy-${{ github.sha }}']
 

@@ -19,11 +19,11 @@ baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/4.0/x86_64/
 gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc" >> mongodb-org-4.0.repo
-sudo yum install -y mongodb-org
-sudo systemctl start mongod
-sudo systemctl daemon-reload
-sudo systemctl status mongod
-sudo systemctl enable mongod
+yum install -y mongodb-org
+systemctl start mongod
+systemctl daemon-reload
+systemctl status mongod
+systemctl enable mongod
 
 # Installing app dependencies
 cd /home/ec2-user/acebook-t1w3

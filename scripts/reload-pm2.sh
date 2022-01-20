@@ -25,7 +25,7 @@ systemctl daemon-reload
 systemctl status mongod
 systemctl enable mongod
 
-Installing app dependencies
+# Installing app dependencies
 cd /home/ec2-user/acebook-t1w3
 npm install
 npm i pm2@latest -g

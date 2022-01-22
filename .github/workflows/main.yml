@@ -49,8 +49,8 @@ jobs:
         matrix:
           node-version: ['12.x']
           appname: ['Atest-application']
-          deploy-group: ['testingam-deployment']
-          s3-bucket: ['AMtest-deployment']
+          deploy-group: ['AMtest-deployment']
+          s3-bucket: ['testing-am'] 
           s3-filename: ['AMtest-deployment-${{ github.sha }}']
 
       needs: test

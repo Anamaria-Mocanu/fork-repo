@@ -1,6 +1,6 @@
 #/bin/bash
 echo "Changing directory to acebook-t1w3"
-cd /home/ec2-user/acebook-t1w3
+cd /home/ec2-user/testing
 touch testfile.txt
 echo "Hello, world" >> testfile.txt
 cat testfile.txt
@@ -15,13 +15,13 @@ nvm install 12.14.1
 
 # Installing mongodb
 cd /etc/yum.repos.d
-touch mongodb-org-4.0.repo
-echo "[mongodb-org-4.0]
+touch mongodb-org-4.2.repo
+echo "[mongodb-org-4.2]
 name=MongoDB Repository
-baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/4.0/x86_64/
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/4.2/x86_64/
 gpgcheck=1
 enabled=1
-gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc" >> mongodb-org-4.0.repo
+gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc" >> mongodb-org-4.2.repo
 yum install -y mongodb-org
 systemctl start mongod
 systemctl daemon-reload
@@ -29,10 +29,10 @@ systemctl status mongod
 systemctl enable mongod
 
 # Installing app dependencies
-cd /home/ec2-user/acebook-t1w3
+cd /home/ec2-user/testing
 npm install
 npm i pm2@latest -g
 
 # starts application
 pm2 delete all
-pm2 start npm --name "acebook-t1w3" -- start
+pm2 start npm --name "testing" -- start

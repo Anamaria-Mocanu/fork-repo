@@ -48,10 +48,10 @@ jobs:
       strategy:
         matrix:
           node-version: ['12.x']
-          appname: ['acebook-t1-w3']
-          deploy-group: ['deployment-group-t1w3']
-          s3-bucket: ['acebook-t1w3']
-          s3-filename: ['t1-w3-codedeploy-${{ github.sha }}']
+          appname: ['testingam']
+          deploy-group: ['testingam-deployment']
+          s3-bucket: ['testing-am']
+          s3-filename: ['testing-codedeploy-${{ github.sha }}']
 
       needs: test
       steps:

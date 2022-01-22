@@ -13,7 +13,7 @@ It uses:
 
 ## Card wall
 [Super sick card wall](https://trello.com/b/N3bTW90E/week-3-project-team-1)
-|Wish us luck! yolo
+|Wish us luck! yolo...
 ## Quickstart
 
 ### Install Node.js

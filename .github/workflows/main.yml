@@ -51,7 +51,7 @@ jobs:
           appname: ['testingam']
           deploy-group: ['testingam-deployment']
           s3-bucket: ['testing-am']
-          s3-filename: ['testing-codedeploy-${{ github.sha }}']
+          s3-filename: ['testingam-deployment-${{ github.sha }}']
 
       needs: test
       steps:

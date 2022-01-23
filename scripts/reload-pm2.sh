@@ -15,13 +15,13 @@ nvm install 12.14.1
 
 # Installing mongodb
 cd /etc/yum.repos.d
-touch mongodb-org-4.0.repo
-echo "[mongodb-org-4.0]
+touch mongodb-org-4.2.repo
+echo "[mongodb-org-4.2]
 name=MongoDB Repository
-baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/4.0/x86_64/
+baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/4.2/x86_64/
 gpgcheck=1
 enabled=1
-gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc" >> mongodb-org-4.0.repo
+gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc" >> mongodb-org-4.2.repo
 yum install -y mongodb-org
 systemctl start mongod
 systemctl daemon-reload

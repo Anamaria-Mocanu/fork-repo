@@ -5,13 +5,13 @@ touch testfile.txt
 echo "Hello, world" >> testfile.txt
 cat testfile.txt
 
-# # Geting the nvm
-# curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-# . ~/.nvm/nvm.sh
-# nvm bash_completion
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# nvm install 12.14.1
+# Geting the nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm install 12.14.1
 
 # # Installing mongodb
 # cd /etc/yum.repos.d
@@ -28,12 +28,12 @@ cat testfile.txt
 # systemctl status mongod
 # systemctl enable mongod
 
-# # Installing app dependencies
-# cd /home/ec2-user/acebook-t1w3
-# npm cache clean --force
-# rm -rf node_modules package-lock.json
-# npm install
-# npm i pm2@latest -g
+# Installing app dependencies
+cd /home/ec2-user/acebook-t1w3
+npm cache clean --force
+rm -rf node_modules package-lock.json
+npm install
+npm i pm2@latest -g
 
 # starts application
 pm2 delete all

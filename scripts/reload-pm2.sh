@@ -21,7 +21,7 @@ name=MongoDB Repository
 baseurl=https://repo.mongodb.org/yum/amazon/2/mongodb-org/4.2/x86_64/
 gpgcheck=1
 enabled=1
-gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc" >> mongodb-org-4.0.repo
+gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc" >> mongodb-org-4.2.repo
 yum install -y mongodb-org
 systemctl start mongod
 systemctl daemon-reload

@@ -1,6 +1,6 @@
 #/bin/bash
 echo "Changing directory to acebook-t1w3"
-cd /home/ec2-user/testing
+cd /home/ec2-user/acebook-t1w3
 touch testfile.txt
 echo "Hello, world" >> testfile.txt
 cat testfile.txt
@@ -29,10 +29,10 @@ systemctl status mongod
 systemctl enable mongod
 
 # Installing app dependencies
-cd /home/ec2-user/testing
+cd /home/ec2-user/acebook-t1w3
 npm install
 npm i pm2@latest -g
 
 # starts application
 pm2 delete all
-pm2 start npm --name "testing" -- start
+pm2 start npm --name "acebook-t1w3" -- start

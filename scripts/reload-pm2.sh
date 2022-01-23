@@ -28,12 +28,12 @@ cat testfile.txt
 # systemctl status mongod
 # systemctl enable mongod
 
-# # Installing app dependencies
-# cd /home/ec2-user/acebook-t1w3
-# npm cache clean --force
-# rm -rf node_modules package-lock.json
-# npm install
-# npm i pm2@latest -g
+# Installing app dependencies
+cd /home/ec2-user/acebook-t1w3
+npm cache clean --force
+rm -rf node_modules package-lock.json
+npm install
+npm i pm2@latest -g
 
 # starts application
 pm2 delete all
